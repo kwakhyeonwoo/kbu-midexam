@@ -2,7 +2,7 @@
 #!/bin/bash
 
 # sample.txt 파일에서 모음 개수 세기
-filename="sample.txt"
+filename="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/sample.txt"
 
 if [[ ! -f $filename ]]; then
   echo "파일이 존재하지 않습니다: $filename"
